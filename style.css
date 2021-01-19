@@ -1,0 +1,98 @@
+*,::before,::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background: blue;
+}
+
+/* Début Media queries */
+
+@media screen and (min-width: 760px) and (max-width: 1600px){
+    Body{
+        background-color: blue;
+    }
+    #sec1{
+        position: absolute;
+        left: 5rem;
+        top: 5rem;
+        left: -1.5rem;
+    }
+    #sec2{
+        position: absolute;
+        top: 5rem;
+        left: 47rem;
+        
+    }
+    #sec3{
+        position: absolute;
+        top: 5rem;
+        left: 95rem;
+        
+    }
+    
+}
+@media screen and (min-width: 410px) and (max-width:760px){
+    body{
+        background-color: green;
+    }
+    #sec2{
+        position: absolute;
+        left: 40rem;
+        width: 20rem;
+    }
+    #sec1{
+        float: left;
+        width: 30rem;
+    }
+    #sec3{
+        position: absolute;
+        top: 43rem;
+        width: 100%;
+    }
+    
+    }
+    
+@media screen and (max-width:410px){
+    body{
+        background-color: red;
+    }
+    .sec .titre{
+        width: 1rem;
+    }
+    p{
+        width: 27rem;
+    }
+}
+
+/* Fin Média */
+
+/* début des div */
+
+.sec{
+    padding: 2rem;
+    font-size: 2rem;
+    width: 50rem;
+    text-align: justify;
+}
+.titre{
+    
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    font-size: 4rem;
+    text-decoration: underline;
+}
+
+.sec::after {
+    content: "";
+    display: table;
+    clear: both;
+    
+}
+
+
