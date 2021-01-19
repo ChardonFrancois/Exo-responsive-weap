@@ -7,3 +7,4 @@ Chardon François
 - CSS
 
 ## link to my project 
+[my-link](https://chardonfrancois.github.io/weap-exo-responsive/)
