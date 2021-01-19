@@ -15,51 +15,31 @@ body{
 @media screen and (min-width: 760px) and (max-width: 1600px){
     Body{
         background-color: blue;
+        display: flex;
+        width: auto;
     }
-    #sec1{
-        position: absolute;
-        left: 5rem;
-        top: 5rem;
-        left: -1.5rem;
-    }
-    #sec2{
-        position: absolute;
-        top: 5rem;
-        left: 47rem;
-        
-    }
-    #sec3{
-        position: absolute;
-        top: 5rem;
-        left: 95rem;
-        
-    }
-    
 }
+
 @media screen and (min-width: 410px) and (max-width:760px){
     body{
         background-color: green;
-    }
-    #sec2{
-        position: absolute;
-        left: 40rem;
-        width: 20rem;
-    }
-    #sec1{
-        float: left;
-        width: 30rem;
+        display: flex;
+        width: auto;
+        
     }
     #sec3{
         position: absolute;
-        top: 43rem;
+        top: 45rem;
         width: 100%;
     }
-    
-    }
+}
     
 @media screen and (max-width:410px){
     body{
         background-color: red;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
     .sec .titre{
         width: 1rem;
@@ -67,6 +47,7 @@ body{
     p{
         width: 27rem;
     }
+    
 }
 
 /* Fin Média */
@@ -87,12 +68,3 @@ body{
     font-size: 4rem;
     text-decoration: underline;
 }
-
-.sec::after {
-    content: "";
-    display: table;
-    clear: both;
-    
-}
-
-
